@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block body %}
+</br>
+
+<div class="container" style="float: right;">
+ <!-- Contact Section -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Dhaka, Bangladesh</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +88 01906777785</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: abdullah15-14502@diu.edu.bd</p>
+    </div><br>
+    <p>Let's get in touch. Send me a message:</p>
+
+    <form method="POST">
+      {% csrf_token %}
+      <p><input class="w3-input w3-padding-16" name="name" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" name="email" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" name="subject" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" name="message" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit" value="Submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </footer>
+
+<!-- END PAGE COzNTENT -->
+</div>
+</div>
+{% endblock %}
